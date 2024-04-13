@@ -51,7 +51,7 @@ spec:
       dnsPolicy: ClusterFirst
       hostNetwork: true
       nodeSelector:
-        beta.kubernetes.io/arch: amd64
+        kubernetes.io/arch: amd64
         sriov: enabled
       restartPolicy: Always
       serviceAccount: sriov-device-plugin
