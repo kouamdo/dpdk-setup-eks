@@ -26,9 +26,9 @@ while index <= end:
     construct={}
     selectors={}
     construct["resourceName"]="intel_sriov_netdevice_"+str(ctr)
-    selectors["vendors"]=["1d0f"]
-    selectors["devices"]=["ec20"]
-    selectors["drivers"]=["ena", "igb_uio", "vfio-pci"]
+    selectors["vendors"]=["8086"]
+    selectors["devices"]=["10ed"]
+    selectors["drivers"]=["vfio-pci"]
     pci =getpciAddress(str(index))
     if not pci:
         print("WARN pciaddress is empty, not adding this resource")
